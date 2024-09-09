@@ -254,7 +254,7 @@ export function Home() {
           </div>
           <div className="landing_image w-full flex items-center justify-center px-5">
             <img className="w-[100vmin] mt-10 hidden md:block" src={landingImage} alt="landing image" />
-            <img className="w-[70vmin] mt-10 md:hidden" src={landingImageVertical} alt="landing image" />
+            <img className="w-[60vmin] mt-10 md:hidden" src={landingImageVertical} alt="landing image" />
           </div>
           <div className="footer absolute right-0 left-0 bottom-0 flex items-center justify-center px-10 py-4 text-gray-500">
             <p className="text-xs">{t("footerText")} <a target="_blank" href="https://www.evoluna.co" className="hover:underline">Evoluna.co</a></p>
