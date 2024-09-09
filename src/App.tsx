@@ -12,7 +12,6 @@ const App: React.FC = () => {
       <ThemeProvider>
         <BrowserRouter>
           <div className="app bg-slate-200 min-h-screen">
-            <Navbar />
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<Home />} />

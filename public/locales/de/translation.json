@@ -1,10 +1,14 @@
 {
-    "English": "Englisch",
-    "Deutsch": "Deutsch",
-    "hello": "Hallo!",
-    "home": "Startseite",
-    "about": "Über uns",
-    "services": "Dienstleistungen",
-    "pricing": "Preise",
-    "contact": "Kontakt"
-  }
+  "English": "Englisch",
+  "Deutsch": "Deutsch",
+  "hello": "Hallo!",
+  "home": "Startseite",
+  "about": "Über uns",
+  "services": "Dienstleistungen",
+  "pricing": "Preise",
+  "contact": "Kontakt",
+  "title": "Sofort auf allen Plattformen teilen!",
+  "description": "Laden Sie Videos herunter und posten Sie sie mit einem Klick auf YouTube, TikTok und Instagram.",
+  "inputPlaceholder": "YouTube, TikTok oder Instagram Reel URL eingeben...",
+  "footerText": "Mit ♡ gemacht von"
+}

@@ -7,6 +7,7 @@ import './Navbar.css';
 import avatar from '../assets/avatar.png';
 import { LanguageSelection } from "./LanguageSelection";
 import { useTranslation } from "react-i18next";
+import logo from "../assets/logo.png"
 
 export function Navbar() {
 
@@ -24,20 +25,18 @@ export function Navbar() {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <div className="navbar bg-white dark:bg-black">
+    <div className="navbar bg-white dark:bg-black md:py-4 py-2">
       <Nav fluid rounded className="mx-auto w-[90%] dark:bg-black">
         <Nav.Brand as={Link} to="/">
-          <span className="self-center whitespace-nowrap text-xl font-semibold text-black dark:text-white">
-            Vestai
-          </span>
+          <img className="w-24 md:w-36" src={logo} alt="logo" />
         </Nav.Brand>
         <div className="flex md:order-2">
           
           <div className="flex items-center flex-row-reverse">
             <LanguageSelection />
-          <DarkMode />
+          {/* <DarkMode /> */}
           </div>
-          <Dropdown
+          {/* <Dropdown
             arrowIcon={false}
             inline
             label={
@@ -58,7 +57,7 @@ export function Navbar() {
             <Dropdown.Item>Settings</Dropdown.Item>
             <Dropdown.Divider />
             <Dropdown.Item>Sign out</Dropdown.Item>
-          </Dropdown>
+          </Dropdown> */}
           <Nav.Toggle />
         </div>
         <Nav.Collapse>
