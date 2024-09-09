@@ -10,7 +10,7 @@ import { LanguageSelection } from "./LanguageSelection";
 import { useTranslation } from "react-i18next";
 import logo from "../assets/logo.png"
 
-export function Navbar() {
+export function Navbar({ onGoBack }) {
 
   const { t } = useTranslation();
 
@@ -28,7 +28,7 @@ export function Navbar() {
   return (
     <div className="navbar bg-white dark:bg-black md:py-4 py-2">
       <Nav fluid rounded className="mx-auto w-[90%] dark:bg-black">
-        <Nav.Brand as={Link} to="/">
+        <Nav.Brand as={Link} to="/" onClick={onGoBack}>
           <img className="w-24 md:w-36" src={logo} alt="logo" />
         </Nav.Brand>
         <div className="flex md:order-2">

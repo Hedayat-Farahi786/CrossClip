@@ -222,36 +222,40 @@
   max-width: 500px;
 }
 .customButton .glow:before {
-  content: "";
-  z-index: -2;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(60deg);
-  position: absolute;
-  width: 999px;
-  height: 999px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  /*border color, change middle color*/
-  background-image: conic-gradient(
-    #000,
-    #402fb5 5%,
-    #000 38%,
-    #000 50%,
-    #cf30aa 60%,
-    #000 87%
-  );
-  /* change speed here */
-  animation: rotate 4s 0.3s linear infinite;
-  transition: all 2s;
-}
-
-@keyframes rotate {
-  100% {
-    transform: translate(-50%, -50%) rotate(450deg);
+    content: "";
+    z-index: -2;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(60deg);
+    position: absolute;
+    width: 999px;
+    height: 999px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    /* Border color, change middle color */
+    background-image: conic-gradient(
+      #000,
+      #402fb5 5%,
+      #000 38%,
+      #000 50%,
+      #cf30aa 60%,
+      #000 87%
+    );
+    /* Smoother animation */
+    animation: rotate 6s linear infinite;
+    /* Smoother transition */
+    transition: all 0.5s ease-in-out;
   }
-}
+  
+  @keyframes rotate {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
 @keyframes leftright {
   0% {
     transform: translate(0px, 0px);

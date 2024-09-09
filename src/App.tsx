@@ -5,6 +5,7 @@ import { ThemeProvider } from "./components/ThemeProvider";
 import { Home } from "./components/Home";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./i18n"; // Export the i18n instance from a separate file
+import Video from "./components/Video";
 
 const App: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ const App: React.FC = () => {
             <Route path="/services" element={<Home />} />
             <Route path="/pricing" element={<Home />} />
             <Route path="/contact" element={<Home />} />
+            <Route path="/video/:id" element={<Video />} />
             </Routes>
           </div>
         </BrowserRouter>
